@@ -1,0 +1,48 @@
+<html><meta charset="UTF-8"><pre>
+<font color=blue>mcc -W 'java:BodyMapApp,Class1' -T link:lib -d /Users/maus/mauscode/PTB_Experiments/BodyMapApp/for_testing class{Class1:/Users/maus/mauscode/PTB_Experiments/BodyMapApp.m} </font>
+<font color=red>Unexpected error while determining required deployable files. Compilation terminated. Details:
+Invalid MEX-file '/Users/maus/canlabrep/spm12/external/fieldtrip/fileio/@uint64/abs.mexmaci64': dlopen(/Users/maus/canlabrep/spm12/external/fieldtrip/fileio/@uint64/abs.mexmaci64, 6): Library not loaded: @loader_path/libmex.dylib
+  Referenced from: /Users/maus/canlabrep/spm12/external/fieldtrip/fileio/@uint64/abs.mexmaci64
+  Reason: image not found.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', '/Applications/MATLAB_R2017b.app/toolbox/matlab/strfun/num2str.p', 69)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/strfun/num2str.p',69,0)">line 69</a>)
+        xmax = double(max(abs(widthCopy(:))));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.cacheEdge', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/cacheEdge.m', 14)" style="font-weight:bold">matlab.depfun.internal.cacheEdge</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/cacheEdge.m',14,0)">line 14</a>)
+    edgePair = [num2str(src) '_' num2str(tgt)];
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion/recordDependency', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m', 900)" style="font-weight:bold">matlab.depfun.internal.Completion/recordDependency</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m',900,0)">line 900</a>)
+                    matlab.depfun.internal.cacheEdge(source, target, true);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion>@(client,symbol)recordDependency(obj,client,symbol)')" style="font-weight:bold">matlab.depfun.internal.Completion>@(client,symbol)recordDependency(obj,client,symbol)</a>
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.MwFileInspector/recordDependency', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m', 116)" style="font-weight:bold">matlab.depfun.internal.MwFileInspector/recordDependency</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m',116,0)">line 116</a>)
+            symList = obj.addDep(client, symbol);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.MwFileInspector/evaluateSymbols', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m', 324)" style="font-weight:bold">matlab.depfun.internal.MwFileInspector/evaluateSymbols</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m',324,0)">line 324</a>)
+                        recordDependency(obj, client, symObj);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.MwFileInspector/analyzeSymbol', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m', 34)" style="font-weight:bold">matlab.depfun.internal.MwFileInspector/analyzeSymbol</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/MwFileInspector.m',34,0)">line 34</a>)
+            evaluateSymbols(obj, symlist, client);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion/findDependentFiles', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m', 1348)" style="font-weight:bold">matlab.depfun.internal.Completion/findDependentFiles</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m',1348,0)">line 1348</a>)
+                    analyzeSymbol(inspector, symbol);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion/computeDependencies', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m', 264)" style="font-weight:bold">matlab.depfun.internal.Completion/computeDependencies</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m',264,0)">line 264</a>)
+                    findDependentFiles(obj);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion/computePartsList', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m', 1993)" style="font-weight:bold">matlab.depfun.internal.Completion/computePartsList</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m',1993,0)">line 1993</a>)
+            computeDependencies(obj);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.Completion/requirements', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m', 2386)" style="font-weight:bold">matlab.depfun.internal.Completion/requirements</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/Completion.m',2386,0)">line 2386</a>)
+            parts = computePartsList(obj, false);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.requirements', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/requirements.m', 220)" style="font-weight:bold">matlab.depfun.internal.requirements</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/requirements.m',220,0)">line 220</a>)
+    [parts, resources.products, resources.platforms] = c.requirements(); 
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.depfun.internal.mcc_call_requirements', '/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/mcc_call_requirements.m', 8)" style="font-weight:bold">matlab.depfun.internal.mcc_call_requirements</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2017b.app/toolbox/matlab/depfun/+matlab/+depfun/+internal/mcc_call_requirements.m',8,0)">line 8</a>)
+    [parts, resources, exclusions] = matlab.depfun.internal.requirements(items, varargin{:});
+</font>
+<font color=red></font>
+<font color=red>mcc failed.</font>
+</pre></html>
